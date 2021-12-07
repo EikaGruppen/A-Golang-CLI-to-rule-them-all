@@ -1,5 +1,7 @@
 # A Golang CLI
+
 ### to rule them all
+
 
 #### Tormod Alf Try Tufteland
 
@@ -50,7 +52,7 @@
 - Use working directory
 - Consider SDK's
 
-#### Q&A
+
 
 
 
@@ -161,6 +163,7 @@ func main() {
 
 «p»_💡 Tip: code in `internal` folders cannot be imported by other projects_
 «p»_💡 Tip: initalize go.mod and go.sum with_ go mod init example.com/project
+
 
 # Cmd
 
@@ -330,7 +333,7 @@ captured := buffer.String()
 #### Find full code at
 [github.com/EikaGruppen](github.com/EikaGruppen)
 
-# UI libraries
+# UI
 
 
 #### Colors
@@ -349,7 +352,7 @@ captured := buffer.String()
 - github.com/gizak/termui
 
 
-# Distribution and updates
+# Distribute
 
 #### homebrew, rpm, chocolatey etc.
 
@@ -441,7 +444,7 @@ type Client struct {
 «p»Avoid macOS "security" command for OS keychain
 
 
-# Consider SDK's
+# SDK
 
 [github.com/google/go-github](github.com/google/go-github)
 
@@ -542,30 +545,25 @@ _following, hit CTRL-C to cancel_
 
 
 
+																			   ********
+																			****************
+																		  ****** **** ********
+																		  **** *********  ****
+																		   ********************                  
+																			  \\   //  ********                      
+																			   \\////  ******                                
+																				 \\\\////                     
+																				  ||||//                       
+																				  ||||                     
+															  ,,,,,, ,,,, ,,,,,,,//||||,,,,,,,,, ,,,,,,,,
+															,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 
+«p» u/tormodatt
 
-
-[github.com/EikaGruppen](https://github.com/EikaGruppen)														 u/tormodatt
-
-
-
+# Thanks!
 
 
 
-																	 ********
-																  ****************
-																****** **** ********
-																**** ********** ****
-																 ********************                  
-																	\\   //  ********                      
-																	 \\////  ******                                
-																	   \\\\////                     
-																		||||//                       
-																		||||                     
-													,,,,,,,,,,,,,,,,,,,//||||,,,,,,,,,,,,,,,,,,
-												  ,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-# The End
+«p»Code and slides here: [github.com/EikaGruppen](https://github.com/EikaGruppen)
