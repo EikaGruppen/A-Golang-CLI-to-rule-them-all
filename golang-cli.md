@@ -23,8 +23,8 @@
 
 #### Eika Gruppen
 
-- Bank group consisting of with 50+ small to medium size banks
-- Combined, one of Norway's biggest banks
+- Bank group consisting of 50+ small to medium size banks
+
 
 
 [github.com/EikaGruppen](https://github.com/EikaGruppen)
@@ -129,7 +129,7 @@ func main() {
 
 [Github Server](./repo/pkg/github/server/server.go)
 
-[pkg/github/client.go](./repo/pkg/github/client.go)
+[pkg/github/client.go](./repo/pkg/github/client.go)	  [pkg/github/client_test.go](./repo/pkg/github/client.go)
 
 <!-- Show client/server, test -->
 
