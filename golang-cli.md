@@ -106,10 +106,10 @@ func main() {
 - Run C code directly
 
 
-- Networking, IO, cuncurrency etc. inluded
+- Networking, IO, concurrency etc. inluded
 
 
-- Many DevSecOps tools are written in go (Docker, k8s, Jaeger, Jenkins X, ...)
+- Many DevSecOps tools are written in Go (Docker, k8s, Jaeger, Jenkins X, ...)
 
 
 
