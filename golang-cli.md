@@ -88,11 +88,11 @@ func main() {
 	println("Hello", *name)
 }
 ```
-<!-- CLI frameworks exists though! -->
 
-<!-- :sp | te --> 
-<!-- <C-d> to exit --> 
-<!-- <C-o> back to presentation --> 
+
+ 
+ 
+ 
 
 # Go
 
@@ -159,7 +159,7 @@ func main() {
 - Avstraction layers
 - Easy to find
 
-<!-- https://www.cyberciti.biz/faq/linux-show-directory-structure-command-line/ -->
+
 
 «p»_💡 Tip: code in `internal` folders cannot be imported by other projects_
 «p»_💡 Tip: initalize go.mod and go.sum with_ go mod init example.com/project
