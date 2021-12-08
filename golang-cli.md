@@ -48,10 +48,12 @@
 
 
 #### Rule your stack
-- OS keychain
-- Use working directory
+- Simplify auth
+- Safer with OS keychain
+- Fetch info from multiple sources
+- Leverage working directory
 - Consider SDK's
-
+- Examples
 
 
 
@@ -114,7 +116,7 @@ func main() {
 
 
 «p»❗️
-«p»Perfection sacrificed for simplicity
+«p»Perfection sacrificed for simplicity?
 
 
 
@@ -122,7 +124,7 @@ func main() {
 # Demo gh
 
 
-#### Goal: Official Github CLI
+#### Today's goal: Official Github CLI
 
 
 # stdlib
@@ -309,7 +311,7 @@ func ListRepos(storage repoStorage, w io.WriteCloser) { ... }
 ```go
 cmd.ListRepos(&gitlab.Client{}, os.Stdout)
 ```
-[cmd/list_test.go]()
+[cmd/list_test.go](./repo/cmd/list_test.go)
 ```go
 var buffer = ...
 
@@ -368,11 +370,20 @@ brew upgrade your-cli
 # Done!
 
 
+
 #### right?
 <!-- haven't touch upon the tings that make your cli rule the stack yet -->
 
 
-# Security
+
+
+
+
+
+«p»_Haven't we just re-implemented an existing CLI?_
+
+
+# Auth
 
 ```go
 type Client struct {
@@ -385,7 +396,7 @@ type Client struct {
 ```
 
 - Store tokens _safely_ till expiry
-- Make auth more convenient _and_ safe with OS keychain
+- Make auth more convenient _and_ safer with OS keychain
 - Local machine and/or build server
 
 
@@ -422,6 +433,10 @@ type Client struct {
 «p»┃        You may now close this browser window...                ┃
 «p»┃                                                                ┃
 «p»┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+«p»_🤔 Tip: the offical azure-cli does this exact thing (only without PKCE)_
+
+
 
 # OS keychain
 
@@ -464,22 +479,8 @@ repos, _, err := client.Repositories.ListByOrg(context.Background(), "github", o
 «p»_🤔 Tip: SDK stands for_ Software Development Kit _, and is a client-code for a specific language and service_
 
 
-# Rule them all
-
-«p» Safer and more convenient auth
-
-«p» Integrate all your services
-
-«p» Bind them
-«p»                      _in the darkness?_
-
-
-
-#### -> more efficient and satisfying workflow
-
-
-
 # Examples
+
 #### status
 
 
@@ -498,7 +499,11 @@ Latest version: 1.0.0
 ```
 «p»Integrations: build server, build system, container orchestrator, artifact manager, git
 
+
+«p»_🤔 Tip: brew install autojump_
+
 # Examples
+
 
 #### Print progress
 
@@ -506,6 +511,7 @@ Latest version: 1.0.0
 - Tests:                DONE!
 - Scan:        [===>    ] 51%
 - Analysis:    [=====>  ] 82%
+
 
 
 # Examples
@@ -545,18 +551,18 @@ _following, hit CTRL-C to cancel_
 
 
 
-																			   ********
-																			****************
-																		  ****** **** ********
-																		  **** *********  ****
-																		   ********************                  
-																			  \\   //  ********                      
-																			   \\////  ******                                
-																				 \\\\////                     
-																				  ||||//                       
-																				  ||||                     
-															  ,,,,,, ,,,, ,,,,,,,//||||,,,,,,,,, ,,,,,,,,
-															,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                                                                           ********                               
+                                                                        ****************                          
+                                                                      ****** **** ********                        
+                                                                      **** *********  ****                        
+                                                                       ********************                       
+                                                                          \\   //  ********                       
+                                                                           \\////  ******                         
+                                                                             \\\\////                             
+                                                                              ||||//                              
+                                                                              ||||                                
+                                                          ,,,,,, ,,,, ,,,,,,,//||||,,,,,,,,, ,,,,,,,,             
+                                                        ,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 
@@ -565,5 +571,38 @@ _following, hit CTRL-C to cancel_
 # Thanks!
 
 
+«p»Share command ideas in the Slack-channel!
+
+
+
+
+
+
+
 
 «p»Code and slides here: [github.com/EikaGruppen](https://github.com/EikaGruppen)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
