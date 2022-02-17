@@ -1,7 +1,9 @@
 # A Golang CLI to rule them all
 
-This is a repo for the [slides](./golang-cli.md) and the code that were showed at the presentation with the same title at the JavaZone conference in Norway in 2021.
+This is a repo for the [slides](./golang-cli.md) and the code that were showed at the presentation with the same title at the JavaZone conference in Norway in 2021
 
+Video recording:
+[![A Golang CLI to rule them all](./presentation_thumbnail.png)](https://vimeo.com/669321458 "A Golang CLI to rule them all - Click to watch")
 
 # Learn Go
 
